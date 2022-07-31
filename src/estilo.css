@@ -13,8 +13,9 @@
 main,html{
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
-
+  height: 150vh;
+  background-color: #404d5c;
+  background-repeat: no-repeat;
   background-image: url(../pexels-pixabay-76969.jpg);
   background-size: cover;
 
@@ -33,6 +34,10 @@ main,html{
 
 
 }
+.nombre {
+  text-align: end;
+  width: 90%;
+}
 .text {
   color: #DDD;
   border-radius: 10px;
@@ -43,9 +48,28 @@ main,html{
   text-align: center;
   text-decoration: none;
   padding: 1rem;
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
+@media (max-width: 600px) { 
+  .nav {
+    width: 80%;
+  }
+  .text {
+  color: #DDD;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #111;
+  box-decoration-break: unset;
+  border: 5px solid #999;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  width: 100%;
+
+
+  }
+ }
 .div{
   display: flex;
   width: 100%;
@@ -56,18 +80,24 @@ main,html{
   align-items: center;
   padding: 6px;
   color: #111;
-  background-color:  blur(45px);
-  
-
-  width: 100%;
+  width: 80%;
   margin: auto;
 
   padding: 15px 0;
+
+  
+}
+.close:hover {
+
+  background-color: red;
+  color: #ddd;
+  cursor: pointer;
 }
 .cantidadMin {
   text-align: center;
   margin: 0;
   flex-wrap: 1;
+  width: 90%;
 }
 
 .imagen {
@@ -79,6 +109,14 @@ main,html{
 .close{
   font-size: 30px;
   color: red;
+  padding: 5px;
+  width: 10%;
+  height: 100%;
+  border-radius: 25px;
+  text-align: center;
+  margin-right: 20%;
+  transition: color, background-color;
+  transition-delay: .1s;
 }
 .none {
   display: none;
